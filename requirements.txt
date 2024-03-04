@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+urllib3
+scipy
+mpl_toolkits.mplot3d
+pywaffle
+altair
+babel
+plotly
+vega_datasets
+pydeck
+streamlit
