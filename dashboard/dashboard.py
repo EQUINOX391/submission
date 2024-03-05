@@ -77,17 +77,17 @@ def load_rank_df():
     return rank_df
 
 def main():
-    sorted_df_cat = load_sorted_df_cat()
-    sum_spend_df = load_sum_spend_df()
-    buy_df = load_buy_df()
-    top_products = load_top_products()
-    customers_state = load_customers_state()
-    customers_city = load_customers_city()
-    customers_city_top30 = load_customers_city_top30()
-    customers_loc = load_customers_loc()
-    rfm_df = load_rfm_df()
-    segment_df = load_segment_df()
-    rank_df = load_rank_df()
+    load_sorted_df_cat()
+    load_sum_spend_df()
+    load_buy_df()
+    load_top_products()
+    load_customers_state()
+    load_customers_city()
+    load_customers_city_top30()
+    load_customers_loc()
+    load_rfm_df()
+    load_segment_df()
+    load_rank_df()
 
     with st.sidebar:
         # Menambahkan logo perusahaan
