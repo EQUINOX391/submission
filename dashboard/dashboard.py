@@ -13,81 +13,81 @@ sb.set(style='dark')
 # Function to load sorted_df_cat
 @st.cache_data
 def load_sorted_df_cat():
-    sorted_df_cat = pd.read_csv("sorted_df_cat.csv")
+    sorted_df_cat = pd.read_csv("dashboard/sorted_df_cat.csv")
     return sorted_df_cat
 
 # Function to load sum_spend_df
 @st.cache_data
 def load_sum_spend_df():
-    sum_spend_df = pd.read_csv("sum_spend_df.csv")
+    sum_spend_df = pd.read_csv("dashboard/sum_spend_df.csv")
     return sum_spend_df
 
 # Function to load buy_df
 @st.cache_data
 def load_buy_df():
-    buy_df = pd.read_csv("buy_df.csv")
+    buy_df = pd.read_csv("dashboard/buy_df.csv")
     return buy_df
 
 # Function to load top_products
 @st.cache_data
 def load_top_products():
-    top_products = pd.read_csv("top_products.csv")
+    top_products = pd.read_csv("dashboard/top_products.csv")
     return top_products
 
 # Function to load customers_state
 @st.cache_data
 def load_customers_state():
-    customers_state = pd.read_csv("customers_state.csv")
+    customers_state = pd.read_csv("dashboard/customers_state.csv")
     return customers_state
 
 # Function to load customers_city
 @st.cache_data
 def load_customers_city():
-    customers_city = pd.read_csv("customers_city.csv")
+    customers_city = pd.read_csv("dashboard/customers_city.csv")
     return customers_city
 
 # Function to load customers_city_top30
 @st.cache_data
 def load_customers_city_top30():
-    customers_city_top30 = pd.read_csv("customers_city_top30.csv")
+    customers_city_top30 = pd.read_csv("dashboard/customers_city_top30.csv")
     return customers_city_top30
 
 # Function to load customers_loc
 @st.cache_data
 def load_customers_loc():
-    customers_loc = pd.read_csv("customers_loc.csv")
+    customers_loc = pd.read_csv("dashboard/customers_loc.csv")
     return customers_loc
 
 # Function to load rfm_df
 @st.cache_data
 def load_rfm_df():
-    rfm_df = pd.read_csv("rfm_df.csv")
+    rfm_df = pd.read_csv("dashboard/rfm_df.csv")
     return rfm_df
 
 # Function to load segment_df
 @st.cache_data
 def load_segment_df():
-    segment_df = pd.read_csv("segment_df.csv")
+    segment_df = pd.read_csv("dashboard/segment_df.csv")
     return segment_df
 
 # Function to load rank_df
 @st.cache_data
 def load_rank_df():
-    rank_df = pd.read_csv("rank_df.csv")
+    rank_df = pd.read_csv("dashboard/rank_df.csv")
     return rank_df
 
 def main():
-    load_sorted_df_cat()
-    load_sum_spend_df()
-    load_buy_df()
-    load_top_products()
-    load_customers_state()
-    load_customers_city()
-    load_customers_city_top30()
-    load_customers_loc()
-    load_rfm_df()
-    load_segment_df()
-    load_rank_df()
+    sorted_df_cat = load_sorted_df_cat()
+    sum_spend_df = load_sum_spend_df()
+    buy_df = load_buy_df()
+    top_products = load_top_products()
+    customers_state = load_customers_state()
+    customers_city = load_customers_city()
+    customers_city_top30 = load_customers_city_top30()
+    customers_loc = load_customers_loc()
+    rfm_df = load_rfm_df()
+    segment_df = load_segment_df()
+    rank_df = load_rank_df()
 
     with st.sidebar:
         # Menambahkan logo perusahaan
